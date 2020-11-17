@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1605630878 source:c:\users\celeste\documents\github\arrayoftrees\main.c
+	<stdio.h>
+	<stdlib.h>
+	"animal.h"
+	"AnimalTree.h"
+	"arrayOfTrees.h"
+
+1605630227 source:c:\users\celeste\documents\github\arrayoftrees\animal.c
+	"animal.h"
+
+1605630314 c:\users\celeste\documents\github\arrayoftrees\animal.h
+	<stdio.h>
+	<stdlib.h>
+
+1605630215 source:c:\users\celeste\documents\github\arrayoftrees\animaltree.c
+	"AnimalTree.h"
+
+1605630325 c:\users\celeste\documents\github\arrayoftrees\animaltree.h
+	"animal.h"
+	<stdio.h>
+	<stdlib.h>
+
+1605630290 source:c:\users\celeste\documents\github\arrayoftrees\arrayoftrees.c
+	"arrayOfTrees.h"
+
+1605630902 c:\users\celeste\documents\github\arrayoftrees\arrayoftrees.h
+	"AnimalTree.h"
+	"animal.h"
+	<strings.h>
+	<stdio.h>
+	<stdlib.h>
+
