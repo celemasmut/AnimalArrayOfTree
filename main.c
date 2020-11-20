@@ -13,5 +13,6 @@ int main()
     validos=arch2Ada(Especies,validos,dim);
     printf("Validos: %d",validos);
     mostrarArrayAnimales(Especies,validos);
+    crearArchivoPorEspecie(Especies,validos);
     return 0;
 }

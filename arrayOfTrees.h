@@ -28,6 +28,8 @@ int agregarArray(celdaEspecie ada[], registroArchivo ra, int valid);
 int buscarPosArray(celdaEspecie ada[],char especie[],int valid);
 int agregarEspecie(celdaEspecie ada[], char especie[], int idEspecie,int valid);
 void mostrarArrayAnimales(celdaEspecie especie[],int validos);
+void crearArchivoPorEspecie(celdaEspecie especie[],int validos);
+void guardarArbolDeEspecie(char archEspecies,nodoArbol*arbolEspecie);
 
 
 #endif // ARRAYOFTREES_H_INCLUDED

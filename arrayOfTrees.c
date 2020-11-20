@@ -1,5 +1,5 @@
 #include "arrayOfTrees.h"
-#include <strings.h>
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 char archAnimales[]="animales.dat";
@@ -66,5 +66,33 @@ void mostrarArrayAnimales(celdaEspecie especie[],int validos)
         printf("\nEspecie: %s",especie[indice].especie);
         inOrder(especie[indice].arbolDeAnimales);
         printf("\n---------------------------");
+    }
+}
+
+void crearArchivoPorEspecie(celdaEspecie especie[],int validos)
+{
+    char nombreArchEspecie[20];
+    int indice;
+    for(indice=0; indice<validos;indice++)
+    {
+        nombreArchEspecie[0]='\0';
+        strcpy(nombreArchEspecie,especie[indice].especie);
+        strcat(nombreArchEspecie,".dat");//concateno
+        FILE*especiArch=fopen(nombreArchEspecie,"ab");
+        if(especiArch)
+        {
+            guardarArbolDeEspecie(especiArch,especie[indice].arbolDeAnimales);
+            fclose(especiArch);
+        }
+    }
+}
+
+void guardarArbolDeEspecie(char archEspecies,nodoArbol*arbolEspecie)
+{
+    if(arbolEspecie)
+    {
+        guardarArbolDeEspecie(archEspecies,arbolEspecie->izq);
+        fwrite(&arbolEspecie->dato,sizeof(animal),1,archEspecies);
+        guardarArbolDeEspecie(archEspecies,arbolEspecie->der);
     }
 }
