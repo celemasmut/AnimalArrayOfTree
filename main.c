@@ -11,6 +11,7 @@ int main()
     int dim=20;
     celdaEspecie Especies[dim];
     validos=arch2Ada(Especies,validos,dim);
-
+    printf("Validos: %d",validos);
+    mostrarArrayAnimales(Especies,validos);
     return 0;
 }

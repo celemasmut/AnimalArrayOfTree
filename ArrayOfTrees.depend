@@ -31,3 +31,38 @@
 	<stdio.h>
 	<stdlib.h>
 
+1605630227 source:c:\users\celeste\documents\github\animalarrayoftree\animal.c
+	"animal.h"
+
+1605630314 c:\users\celeste\documents\github\animalarrayoftree\animal.h
+	<stdio.h>
+	<stdlib.h>
+
+1605630215 source:c:\users\celeste\documents\github\animalarrayoftree\animaltree.c
+	"AnimalTree.h"
+
+1605630325 c:\users\celeste\documents\github\animalarrayoftree\animaltree.h
+	"animal.h"
+	<stdio.h>
+	<stdlib.h>
+
+1605883141 source:c:\users\celeste\documents\github\animalarrayoftree\arrayoftrees.c
+	"arrayOfTrees.h"
+	<strings.h>
+	<stdio.h>
+	<stdlib.h>
+
+1605882457 c:\users\celeste\documents\github\animalarrayoftree\arrayoftrees.h
+	"AnimalTree.h"
+	"animal.h"
+	<strings.h>
+	<stdio.h>
+	<stdlib.h>
+
+1605882457 source:c:\users\celeste\documents\github\animalarrayoftree\main.c
+	<stdio.h>
+	<stdlib.h>
+	"animal.h"
+	"AnimalTree.h"
+	"arrayOfTrees.h"
+

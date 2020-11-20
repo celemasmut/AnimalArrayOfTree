@@ -1,4 +1,7 @@
 #include "arrayOfTrees.h"
+#include <strings.h>
+#include <stdio.h>
+#include <stdlib.h>
 char archAnimales[]="animales.dat";
 
 
@@ -35,7 +38,7 @@ int buscarPosArray(celdaEspecie ada[],char especie[],int valid)
     int indice=0;
     while(indice < valid && pos == -1)
     {
-        if(ada[indice].especie == especie)
+        if(strcmp(ada[indice].especie,especie) ==0)
         {
             pos=indice;
         }
@@ -51,4 +54,17 @@ int agregarEspecie(celdaEspecie ada[], char especie[], int idEspecie,int valid)
     ada[valid].arbolDeAnimales=inicArbol();
     valid++;
     return valid;
+}
+
+void mostrarArrayAnimales(celdaEspecie especie[],int validos)
+{
+    printf("\nMuestro arreglo de especie\n");
+    int indice;
+    for(indice=0; indice<validos;indice++)
+    {
+        printf("\n---------------------------");
+        printf("\nEspecie: %s",especie[indice].especie);
+        inOrder(especie[indice].arbolDeAnimales);
+        printf("\n---------------------------");
+    }
 }

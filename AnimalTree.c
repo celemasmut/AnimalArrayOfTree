@@ -34,7 +34,9 @@ nodoArbol*insertArbol(nodoArbol* Arbol, nodoArbol*nuevo)
 }
 void mostrarArbolAnimal(nodoArbol*Arbol)
 {
+    printf("\n");
     mostrarAnimal(Arbol->dato);
+    printf("\n");
 }
 
 

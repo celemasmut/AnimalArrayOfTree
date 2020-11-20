@@ -27,6 +27,7 @@ int arch2Ada(celdaEspecie ada[],int valid,int dim);
 int agregarArray(celdaEspecie ada[], registroArchivo ra, int valid);
 int buscarPosArray(celdaEspecie ada[],char especie[],int valid);
 int agregarEspecie(celdaEspecie ada[], char especie[], int idEspecie,int valid);
+void mostrarArrayAnimales(celdaEspecie especie[],int validos);
 
 
 #endif // ARRAYOFTREES_H_INCLUDED
